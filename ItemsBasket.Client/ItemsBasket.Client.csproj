@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\ItemsBasket.AuthenticationService\Models\AuthenticationRequest.cs" Link="Models\AuthenticationRequest.cs" />
+    <Compile Include="..\ItemsBasket.AuthenticationService\Models\User.cs" Link="Models\User.cs" />
+    <Compile Include="..\ItemsBasket.AuthenticationService\Responses\AuthenticationResponse.cs" Link="Responses\AuthenticationResponse.cs" />
+    <Compile Include="..\ItemsBasket.AuthenticationService\Responses\UserResponse.cs" Link="Responses\UserResponse.cs" />
+    <Compile Include="..\ItemsBasket.BasketService\Responses\BasketItemResponse.cs" Link="Responses\BasketItemResponse.cs" />
+    <Compile Include="..\ItemsBasket.BasketService\Responses\GetUserBasketItemsResponse.cs" Link="Responses\GetUserBasketItemsResponse.cs" />
+    <Compile Include="..\ItemsBasket.ItemsService\Responses\GetItemsResponse.cs" Link="Responses\GetItemsResponse.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Responses\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ItemsBasket.Common\ItemsBasket.Common.csproj" />
+  </ItemGroup>
+
+</Project>
