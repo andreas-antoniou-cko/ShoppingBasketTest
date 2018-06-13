@@ -4,10 +4,12 @@
 
 The dev team has just completed developing a prototype implementation of a set of services that implement a shopping basket solution, along with a client library that allows you to connect to these services. The deliverable is checked in this repository but does not contain any unit or integration tests. Your task is to create these tests using any framework of your choice. If you feel at any point that the implementation could be modified to improve testability but without affecting functionality then feel free to do so but make sure you document this.
 
-## Features summary ##
+## Acceptance criteria ##
 
-The following assumptions were made for this implementation:
-
+* You should be able to get a list of all existing users, create new ones and update and delete existing ones.
+	* When creating a new user the username has to be unique and the password valid (longer than 4 characters).
+	* When updating or deleting a user that does not exsit then an error should be thrown.
+* Only registered/authorized users should be able to perform any shopping basket actions.
 * If a registered customer does not have a basket, this will be created when the first call to the API is made.
 * A customer can only have one basket at a time. 
 * Since this is a single basket implementation, it is assumed that a shopping cart like functionality is required. This means that only the following operations are supported:
@@ -19,7 +21,7 @@ The following assumptions were made for this implementation:
 		* If the item does not exist in the basket it will be added.
 		* If the quantity is changed to zero it will be removed.
 * Once the user completes the purchase then the Clear all items call can be made to start from scratch.
-* The backend store is an in memory dictionary so only a single instance of the services can run as of now.
+* Any user should be able to retrieve a list of all items that can be added to a basket without requireing authorization.
 
 ## Services ##
 
