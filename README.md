@@ -16,6 +16,8 @@ All code in this solution is .NET Core 2.0 compatible.  If you do not have the .
 
 To start all three of the services, open a PowerShell session and run the `RunAll.ps1` script at the root of the solution.  Each service will begin running in a new console window.  If you are on a platform that does not support PowerShell, you can also start each service using `dotnet run` from a console.
 
+An existing user account (without a shopping basket) already exists for your convenience. The username is **admin** and the password **pass**.
+
 ## Acceptance criteria ##
 
 Your tests should cover as many of the scenarios below as you have time for:
