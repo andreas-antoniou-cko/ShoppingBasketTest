@@ -2,11 +2,17 @@
 
 ## Requirements ##
 
-The development team has just completed a prototype of a set of services that implement a shopping basket solution, along with a client library that allows you to connect to these services. The deliverable is checked in this repository but does not contain any integration tests. Your task is to create these tests using any framework of your choice. A powershell script has been provided which starts all 3 services so feel free to focus writing your tests against these running instances - no need to bootstrap or start them within your tests.
+The development team has just completed a prototype of a set of services that implement a shopping basket solution, along with a client library that allows you to connect to these services. The deliverable is checked in this repository but does not contain any integration tests. Your task is to create these tests using any framework of your choice. A PowerShell script has been provided which starts all 3 services so feel free to focus writing your tests against these running instances - no need to bootstrap or start them within your tests.  The tests can be part of the same solution as the services, or could be in their own separate repository.
+
+## Quick Start ##
+
+All code in this solution is .NET Core 2.0 compatable.  If you do not have the .NET Core 2.0 framework, you should [download and install](https://www.microsoft.com/net/download/windows) it first.  The project can be opened, edited, and debuged in either VS Code or Visual Studio 2017, but neither of those should be a requirement in running the services.
+
+To start all three of the services, open a PowerShell session and run the `RunAll.ps1` script at the root of the solution.  Each service will begin running in a new console window.  If you are on a platform that does not support PowerShell, you can also start each service using `dotnet run` from a console.
 
 ## Acceptance criteria ##
 
-Your tests must cover all of the scenerios below:
+Your tests should cover as many of the scenerios below as you have time for:
 
 * You should be able to get a list of all existing users, create new ones, update and delete existing ones.
 	* When creating a new user the username has to be unique and the password valid (longer than 4 characters).
