@@ -4,7 +4,9 @@
 
 The development team has just completed a prototype of a set of services that implement a shopping basket solution. There is also a client library that allows third parties to integrate with the services. 
 
-Although the solution is feature complete it does not contain any integration tests. **Your task is to create a set of integration tests using .NET C# that fulfill the acceptance criteria below.** 
+Although the solution is feature complete it does not contain any integration tests. 
+
+**Your task is to create a set of integration tests using .NET C# that fulfill the acceptance criteria below.** 
 
 A PowerShell script has been provided which starts all 3 services so feel free to focus writing your tests against these running instances - no need to bootstrap or start them within your tests.  The tests can be part of the same solution as the services, or could be in their own separate repository.
 
