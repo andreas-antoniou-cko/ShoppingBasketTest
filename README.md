@@ -33,11 +33,21 @@ Your tests should cover as many of the scenerios below as you have time for:
 
 ## Debugging and deployment ##
 
+### Visual Studio 2017
+
 The code should build directly from within Visual Studio (2017) by opening the `ItemsBasket.sln` file at the root. Once you compile the solution, right click on the top (solution) node in **Solution Explorer** and select **Set Startup Projects**. From there click on the **Multiple startup projects** radio button and select **Start** in the dropdowns of the following projects:
 
 * ItemsBasket.AuthenticationService
 * ItemsBasket.BasketService
 * ItemsBasket.ItemsService
+
+### VS Code
+
+The project can also be opened using [VS Code](https://code.visualstudio.com/download).  Debugging all services can be done from the `All Services` option in the debug window.
+
+### From The Console
+
+The services can also be run individually through the `dotnet run` command.  Open a console window, navigate to the project folder (e.g. ItemsBasket.AuthenticationService) and type `dotnet run`.  This will start 
 
 ## Services ##
 
