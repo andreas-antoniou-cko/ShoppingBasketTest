@@ -2,7 +2,7 @@
 
 ## Requirements ##
 
-The development team has just completed a prototype of a set of services that implement a shopping basket solution, along with a client library that allows you to connect to these services. The deliverable is checked in this repository but does not contain any unit or integration tests. Your task is to create these tests using any framework of your choice. If you feel at any point that the implementation could be modified to improve testability but without affecting functionality then feel free to do so but make sure you document this.
+The development team has just completed a prototype of a set of services that implement a shopping basket solution, along with a client library that allows you to connect to these services. The deliverable is checked in this repository but does not contain any integration tests. Your task is to create these tests using any framework of your choice. A powershell script has been provided which starts all 3 services so feel free to focus writing your tests against these running instances - no need to bootstrap or start them within your tests.
 
 ## Acceptance criteria ##
 
@@ -70,6 +70,3 @@ When up and running, the service endpoints are:
 * API: 
 	* http://localhost:8003/api/Items
 * Swagger: http://localhost:8003/swagger/
-
-
-
