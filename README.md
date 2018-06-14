@@ -6,7 +6,7 @@ The development team has just completed a prototype of a set of services that im
 
 Although the solution is feature complete it does not contain any integration tests. 
 
-**Your task is to create a set of integration tests using .NET C# that fulfill the acceptance criteria below.** 
+**Your task is to create a set of integration tests using .NET framework and written in C# that fulfill the acceptance criteria below.** 
 
 A PowerShell script has been provided which starts all 3 services so feel free to focus writing your tests against these running instances - no need to bootstrap or start them within your tests.  The tests can be part of the same solution as the services, or could be in their own separate repository.
 
