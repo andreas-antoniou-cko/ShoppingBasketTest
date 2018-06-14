@@ -47,7 +47,7 @@ The project can also be opened using [VS Code](https://code.visualstudio.com/dow
 
 ### From The Console
 
-The services can also be run individually through the `dotnet run` command.  Open a console window, navigate to the project folder (e.g. ItemsBasket.AuthenticationService) and type `dotnet run`.  This will start 
+The services can also be run using the `dotnet run` command.  Open a console window, navigate to the project folder (e.g. ItemsBasket.AuthenticationService) and type `dotnet run`.  However, this will only start one service at a time.  You can run all the services individually through three different console windows.
 
 ## Services ##
 
