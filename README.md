@@ -2,6 +2,8 @@
 
 ## Requirements ##
 
+
+
 The dev team has just completed developing a prototype implementation of a set of services that implement a shopping basket solution, along with a client library that allows you to connect to these services. The deliverable is checked in this repository but does not contain any unit or integration tests. Your task is to create these tests using any framework of your choice. If you feel at any point that the implementation could be modified to improve testability but without affecting functionality then feel free to do so but make sure you document this.
 
 ## Acceptance criteria ##
