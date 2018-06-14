@@ -2,7 +2,11 @@
 
 ## Requirements ##
 
-The development team has just completed a prototype of a set of services that implement a shopping basket solution, along with a client library that allows you to connect to these services. The deliverable is checked in this repository but does not contain any integration tests. Your task is to create these tests using any framework of your choice. A PowerShell script has been provided which starts all 3 services so feel free to focus writing your tests against these running instances - no need to bootstrap or start them within your tests.  The tests can be part of the same solution as the services, or could be in their own separate repository.
+The development team has just completed a prototype of a set of services that implement a shopping basket solution. There is also a client library that allows third parties to integrate with the services. 
+
+Although the solution is feature complete it does not contain any integration tests. *Your task is to create a set of integration tests using .NET C# that fulfill the acceptance criteria below.* 
+
+A PowerShell script has been provided which starts all 3 services so feel free to focus writing your tests against these running instances - no need to bootstrap or start them within your tests.  The tests can be part of the same solution as the services, or could be in their own separate repository.
 
 ## Quick Start ##
 
@@ -17,8 +21,8 @@ Your tests should cover as many of the scenarios below as you have time for:
 * You should be able to get a list of all existing users, create new ones, update and delete existing ones.
 	* When creating a new user the username has to be unique and the password valid (longer than 4 characters).
 	* When updating or deleting a user that does not exist then an error should be thrown.
-* Only registered/authorized users should be able to perform any shopping basket actions.
 * If a registered customer does not have a basket, this will be created when the first call to the API is made.
+* Only registered/authorized users should be able to perform any shopping basket actions.
 * A customer can only have one basket at a time. 
 * Since this is a single basket implementation, it is assumed that a shopping cart like functionality is required. This means that only the following operations are supported:
 	* Fetch all items currently in the basket.
