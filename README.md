@@ -6,13 +6,13 @@ The development team has just completed a prototype of a set of services that im
 
 ## Quick Start ##
 
-All code in this solution is .NET Core 2.0 compatable.  If you do not have the .NET Core 2.0 framework, you should [download and install](https://www.microsoft.com/net/download/windows) it first.  The project can be opened, edited, and debuged in either VS Code or Visual Studio 2017, but neither of those should be a requirement in running the services.
+All code in this solution is .NET Core 2.0 compatible.  If you do not have the .NET Core 2.0 framework, you should [download and install](https://www.microsoft.com/net/download/windows) it first.  The project can be opened, edited, and debugged in either VS Code or Visual Studio 2017, but neither of those should be a requirement in running the services.
 
 To start all three of the services, open a PowerShell session and run the `RunAll.ps1` script at the root of the solution.  Each service will begin running in a new console window.  If you are on a platform that does not support PowerShell, you can also start each service using `dotnet run` from a console.
 
 ## Acceptance criteria ##
 
-Your tests should cover as many of the scenerios below as you have time for:
+Your tests should cover as many of the scenarios below as you have time for:
 
 * You should be able to get a list of all existing users, create new ones, update and delete existing ones.
 	* When creating a new user the username has to be unique and the password valid (longer than 4 characters).
